@@ -1,0 +1,144 @@
+{
+  "schema": "atlas-historical-stress-v1",
+  "dataset": "NOAA NGDC annual sunspot observations 1700-2008 via statsmodels",
+  "source": "https://github.com/statsmodels/statsmodels/blob/main/statsmodels/datasets/sunspots/data.py",
+  "license": "public domain as stated by statsmodels",
+  "sha256": "476b27d0f838fae7297c219416cd00d1e36b3ba9dbf09a47e20910740cbea3ec",
+  "rows": 309,
+  "evaluation": "Six fixed chronological cutoffs; fit on years before each cutoff, test on subsequent 15 years; no horizon values used for selection.",
+  "note": "Off-domain stress ONLY: deployed equation predictions intentionally refuse coordinates outside observed range. Backtest is not an approved forecasting tool.",
+  "averages": {
+    "historical_mean_rmse": 39.062339,
+    "last_training_value_rmse": 59.157628,
+    "autoregressive_2_rmse": 30.913529,
+    "equation_13_rmse": 40.966374,
+    "equation_16_rmse": 41.397293
+  },
+  "runs": [
+    {
+      "cutoff_year": 1880,
+      "train_count": 180,
+      "future_count": 15,
+      "historical_mean_rmse": 26.527363,
+      "last_training_value_rmse": 46.125141,
+      "autoregressive_2_rmse": 24.65068,
+      "equation_13_rmse": 35.410133,
+      "equation_13_terms": [
+        "1",
+        "x\u00b3"
+      ],
+      "equation_13_validation_rmse": 39.152265,
+      "equation_16_rmse": 36.560157,
+      "equation_16_terms": [
+        "x\u00b3",
+        "1/x"
+      ],
+      "equation_16_validation_rmse": 39.177611
+    },
+    {
+      "cutoff_year": 1900,
+      "train_count": 200,
+      "future_count": 15,
+      "historical_mean_rmse": 28.791352,
+      "last_training_value_rmse": 26.675944,
+      "autoregressive_2_rmse": 23.716124,
+      "equation_13_rmse": 28.391041,
+      "equation_13_terms": [
+        "1"
+      ],
+      "equation_13_validation_rmse": 37.516794,
+      "equation_16_rmse": 29.204788,
+      "equation_16_terms": [
+        "\u221ax"
+      ],
+      "equation_16_validation_rmse": 37.521093
+    },
+    {
+      "cutoff_year": 1920,
+      "train_count": 220,
+      "future_count": 15,
+      "historical_mean_rmse": 26.187834,
+      "last_training_value_rmse": 38.61517,
+      "autoregressive_2_rmse": 22.09734,
+      "equation_13_rmse": 30.030224,
+      "equation_13_terms": [
+        "1",
+        "x\u2074"
+      ],
+      "equation_13_validation_rmse": 37.086298,
+      "equation_16_rmse": 29.76337,
+      "equation_16_terms": [
+        "x\u2074",
+        "log(x)"
+      ],
+      "equation_16_validation_rmse": 37.05301
+    },
+    {
+      "cutoff_year": 1940,
+      "train_count": 240,
+      "future_count": 15,
+      "historical_mean_rmse": 50.665416,
+      "last_training_value_rmse": 54.706825,
+      "autoregressive_2_rmse": 45.570642,
+      "equation_13_rmse": 51.025581,
+      "equation_13_terms": [
+        "1"
+      ],
+      "equation_13_validation_rmse": 39.110191,
+      "equation_16_rmse": 50.493662,
+      "equation_16_terms": [
+        "\u221ax"
+      ],
+      "equation_16_validation_rmse": 39.196023
+    },
+    {
+      "cutoff_year": 1960,
+      "train_count": 260,
+      "future_count": 15,
+      "historical_mean_rmse": 37.202719,
+      "last_training_value_rmse": 103.358564,
+      "autoregressive_2_rmse": 24.960443,
+      "equation_13_rmse": 48.54227,
+      "equation_13_terms": [
+        "1",
+        "x",
+        "x\u00b3"
+      ],
+      "equation_13_validation_rmse": 38.997419,
+      "equation_16_rmse": 50.056035,
+      "equation_16_terms": [
+        "1",
+        "x\u00b3",
+        "1/x"
+      ],
+      "equation_16_validation_rmse": 38.926937
+    },
+    {
+      "cutoff_year": 1980,
+      "train_count": 280,
+      "future_count": 15,
+      "historical_mean_rmse": 64.999348,
+      "last_training_value_rmse": 85.464121,
+      "autoregressive_2_rmse": 44.485948,
+      "equation_13_rmse": 52.398996,
+      "equation_13_terms": [
+        "1",
+        "x\u00b3"
+      ],
+      "equation_13_validation_rmse": 39.359419,
+      "equation_16_rmse": 52.305748,
+      "equation_16_terms": [
+        "x\u00b3",
+        "1/x"
+      ],
+      "equation_16_validation_rmse": 39.059048
+    }
+  ],
+  "limitations": [
+    "One-dimensional year->activity prediction ignores solar cycle temporal dynamics and domain knowledge.",
+    "The candidate formulas do not include realistic ~11-year solar-cycle terms.",
+    "Baselines include an ordinary recursively forecast AR(2), still not a state-of-the-art forecasting method.",
+    "Six temporally overlapping historical splits are not six independent experiments.",
+    "No information from holdout years is used to choose equation terms."
+  ]
+}

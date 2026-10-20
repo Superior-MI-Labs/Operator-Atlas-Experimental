@@ -1,0 +1,16 @@
+{
+  "saved": "results/simulation.json",
+  "timings": {
+    "dense": {
+      "median_ms": 0.01695,
+      "min_ms": 0.0156,
+      "storage_bytes": 2359296
+    },
+    "factor": {
+      "median_ms": 0.00774,
+      "min_ms": 0.00746,
+      "storage_bytes": 294912
+    }
+  },
+  "equation": "(1.195)\u00b71 + (-0.7044)\u00b7x\u00b2 + (1.494)\u00b7sin(2x)"
+}

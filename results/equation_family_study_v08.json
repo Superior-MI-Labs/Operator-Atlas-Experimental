@@ -1,0 +1,462 @@
+{
+  "schema": "atlas-equation-family-study-v1",
+  "seeds": [
+    3,
+    7,
+    11,
+    17,
+    23
+  ],
+  "rows": [
+    {
+      "seed": 3,
+      "task": "interaction",
+      "basis_count": 8,
+      "selected_terms": [
+        "1",
+        "cos(x)",
+        "cos(2x)"
+      ],
+      "test_rmse": 0.09234,
+      "validation_rmse": 0.072734,
+      "blocked_holdout_rmse": 0.101948,
+      "mean_test_rmse": 0.927367
+    },
+    {
+      "seed": 3,
+      "task": "interaction",
+      "basis_count": 13,
+      "selected_terms": [
+        "1",
+        "cos(x)",
+        "x\u00b7sin(2x)"
+      ],
+      "test_rmse": 0.002472,
+      "validation_rmse": 0.007709,
+      "blocked_holdout_rmse": 0.010479,
+      "mean_test_rmse": 0.927367
+    },
+    {
+      "seed": 3,
+      "task": "polynomial",
+      "basis_count": 8,
+      "selected_terms": [
+        "1",
+        "x",
+        "x\u00b2"
+      ],
+      "test_rmse": 0.001979,
+      "validation_rmse": 0.011914,
+      "blocked_holdout_rmse": 0.013638,
+      "mean_test_rmse": 0.932226
+    },
+    {
+      "seed": 3,
+      "task": "polynomial",
+      "basis_count": 13,
+      "selected_terms": [
+        "1",
+        "x",
+        "x\u00b2"
+      ],
+      "test_rmse": 0.001979,
+      "validation_rmse": 0.011914,
+      "blocked_holdout_rmse": 0.013638,
+      "mean_test_rmse": 0.932226
+    },
+    {
+      "seed": 3,
+      "task": "unstructured",
+      "basis_count": 8,
+      "selected_terms": [
+        "1"
+      ],
+      "test_rmse": 1.0135,
+      "validation_rmse": 0.741038,
+      "blocked_holdout_rmse": 0.640646,
+      "mean_test_rmse": 1.007256
+    },
+    {
+      "seed": 3,
+      "task": "unstructured",
+      "basis_count": 13,
+      "selected_terms": [
+        "1"
+      ],
+      "test_rmse": 1.0135,
+      "validation_rmse": 0.741038,
+      "blocked_holdout_rmse": 0.640646,
+      "mean_test_rmse": 1.007256
+    },
+    {
+      "seed": 7,
+      "task": "interaction",
+      "basis_count": 8,
+      "selected_terms": [
+        "1",
+        "cos(x)",
+        "cos(2x)"
+      ],
+      "test_rmse": 0.083787,
+      "validation_rmse": 0.092783,
+      "blocked_holdout_rmse": 0.137753,
+      "mean_test_rmse": 1.050348
+    },
+    {
+      "seed": 7,
+      "task": "interaction",
+      "basis_count": 13,
+      "selected_terms": [
+        "1",
+        "cos(x)",
+        "x\u00b7sin(2x)"
+      ],
+      "test_rmse": 0.001527,
+      "validation_rmse": 0.009703,
+      "blocked_holdout_rmse": 0.010786,
+      "mean_test_rmse": 1.050348
+    },
+    {
+      "seed": 7,
+      "task": "polynomial",
+      "basis_count": 8,
+      "selected_terms": [
+        "1",
+        "x",
+        "x\u00b2"
+      ],
+      "test_rmse": 0.001407,
+      "validation_rmse": 0.008801,
+      "blocked_holdout_rmse": 0.008134,
+      "mean_test_rmse": 1.010234
+    },
+    {
+      "seed": 7,
+      "task": "polynomial",
+      "basis_count": 13,
+      "selected_terms": [
+        "1",
+        "x",
+        "x\u00b2"
+      ],
+      "test_rmse": 0.001407,
+      "validation_rmse": 0.008801,
+      "blocked_holdout_rmse": 0.008134,
+      "mean_test_rmse": 1.010234
+    },
+    {
+      "seed": 7,
+      "task": "unstructured",
+      "basis_count": 8,
+      "selected_terms": [
+        "1"
+      ],
+      "test_rmse": 0.809632,
+      "validation_rmse": 1.044782,
+      "blocked_holdout_rmse": 1.080681,
+      "mean_test_rmse": 0.811365
+    },
+    {
+      "seed": 7,
+      "task": "unstructured",
+      "basis_count": 13,
+      "selected_terms": [
+        "x\u00b7sin(x)"
+      ],
+      "test_rmse": 0.827167,
+      "validation_rmse": 1.05018,
+      "blocked_holdout_rmse": 1.092285,
+      "mean_test_rmse": 0.811365
+    },
+    {
+      "seed": 11,
+      "task": "interaction",
+      "basis_count": 8,
+      "selected_terms": [
+        "1",
+        "cos(x)",
+        "cos(2x)"
+      ],
+      "test_rmse": 0.08256,
+      "validation_rmse": 0.089989,
+      "blocked_holdout_rmse": 0.145693,
+      "mean_test_rmse": 0.887009
+    },
+    {
+      "seed": 11,
+      "task": "interaction",
+      "basis_count": 13,
+      "selected_terms": [
+        "1",
+        "cos(x)",
+        "x\u00b7sin(2x)"
+      ],
+      "test_rmse": 0.001058,
+      "validation_rmse": 0.008548,
+      "blocked_holdout_rmse": 0.011413,
+      "mean_test_rmse": 0.887009
+    },
+    {
+      "seed": 11,
+      "task": "polynomial",
+      "basis_count": 8,
+      "selected_terms": [
+        "1",
+        "x",
+        "x\u00b2"
+      ],
+      "test_rmse": 0.000752,
+      "validation_rmse": 0.007791,
+      "blocked_holdout_rmse": 0.010951,
+      "mean_test_rmse": 0.951418
+    },
+    {
+      "seed": 11,
+      "task": "polynomial",
+      "basis_count": 13,
+      "selected_terms": [
+        "1",
+        "x",
+        "x\u00b2"
+      ],
+      "test_rmse": 0.000752,
+      "validation_rmse": 0.007791,
+      "blocked_holdout_rmse": 0.010951,
+      "mean_test_rmse": 0.951418
+    },
+    {
+      "seed": 11,
+      "task": "unstructured",
+      "basis_count": 8,
+      "selected_terms": [
+        "sin(2x)"
+      ],
+      "test_rmse": 1.070393,
+      "validation_rmse": 0.934279,
+      "blocked_holdout_rmse": 0.855507,
+      "mean_test_rmse": 1.021296
+    },
+    {
+      "seed": 11,
+      "task": "unstructured",
+      "basis_count": 13,
+      "selected_terms": [
+        "sin(2x)"
+      ],
+      "test_rmse": 1.070393,
+      "validation_rmse": 0.934279,
+      "blocked_holdout_rmse": 0.855507,
+      "mean_test_rmse": 1.021296
+    },
+    {
+      "seed": 17,
+      "task": "interaction",
+      "basis_count": 8,
+      "selected_terms": [
+        "1",
+        "cos(x)",
+        "cos(2x)"
+      ],
+      "test_rmse": 0.096905,
+      "validation_rmse": 0.102052,
+      "blocked_holdout_rmse": 0.156617,
+      "mean_test_rmse": 1.004176
+    },
+    {
+      "seed": 17,
+      "task": "interaction",
+      "basis_count": 13,
+      "selected_terms": [
+        "1",
+        "cos(x)",
+        "x\u00b7sin(2x)"
+      ],
+      "test_rmse": 0.001991,
+      "validation_rmse": 0.008987,
+      "blocked_holdout_rmse": 0.008404,
+      "mean_test_rmse": 1.004176
+    },
+    {
+      "seed": 17,
+      "task": "polynomial",
+      "basis_count": 8,
+      "selected_terms": [
+        "1",
+        "x",
+        "x\u00b2"
+      ],
+      "test_rmse": 0.001737,
+      "validation_rmse": 0.010397,
+      "blocked_holdout_rmse": 0.011475,
+      "mean_test_rmse": 1.046701
+    },
+    {
+      "seed": 17,
+      "task": "polynomial",
+      "basis_count": 13,
+      "selected_terms": [
+        "1",
+        "x",
+        "x\u00b2"
+      ],
+      "test_rmse": 0.001737,
+      "validation_rmse": 0.010397,
+      "blocked_holdout_rmse": 0.011475,
+      "mean_test_rmse": 1.046701
+    },
+    {
+      "seed": 17,
+      "task": "unstructured",
+      "basis_count": 8,
+      "selected_terms": [
+        "x\u00b3"
+      ],
+      "test_rmse": 0.98181,
+      "validation_rmse": 0.815271,
+      "blocked_holdout_rmse": 0.906775,
+      "mean_test_rmse": 0.927732
+    },
+    {
+      "seed": 17,
+      "task": "unstructured",
+      "basis_count": 13,
+      "selected_terms": [
+        "x\u00b7cos(2x)"
+      ],
+      "test_rmse": 0.997692,
+      "validation_rmse": 0.84552,
+      "blocked_holdout_rmse": 0.917254,
+      "mean_test_rmse": 0.927732
+    },
+    {
+      "seed": 23,
+      "task": "interaction",
+      "basis_count": 8,
+      "selected_terms": [
+        "1",
+        "cos(x)",
+        "cos(2x)"
+      ],
+      "test_rmse": 0.084104,
+      "validation_rmse": 0.07695,
+      "blocked_holdout_rmse": 0.17597,
+      "mean_test_rmse": 1.079381
+    },
+    {
+      "seed": 23,
+      "task": "interaction",
+      "basis_count": 13,
+      "selected_terms": [
+        "1",
+        "cos(x)",
+        "x\u00b7sin(2x)"
+      ],
+      "test_rmse": 0.001341,
+      "validation_rmse": 0.010897,
+      "blocked_holdout_rmse": 0.01023,
+      "mean_test_rmse": 1.079381
+    },
+    {
+      "seed": 23,
+      "task": "polynomial",
+      "basis_count": 8,
+      "selected_terms": [
+        "1",
+        "x",
+        "x\u00b2"
+      ],
+      "test_rmse": 0.002135,
+      "validation_rmse": 0.010572,
+      "blocked_holdout_rmse": 0.006927,
+      "mean_test_rmse": 1.026211
+    },
+    {
+      "seed": 23,
+      "task": "polynomial",
+      "basis_count": 13,
+      "selected_terms": [
+        "1",
+        "x",
+        "x\u00b2"
+      ],
+      "test_rmse": 0.002135,
+      "validation_rmse": 0.010572,
+      "blocked_holdout_rmse": 0.006927,
+      "mean_test_rmse": 1.026211
+    },
+    {
+      "seed": 23,
+      "task": "unstructured",
+      "basis_count": 8,
+      "selected_terms": [
+        "x\u00b3"
+      ],
+      "test_rmse": 0.909177,
+      "validation_rmse": 0.793723,
+      "blocked_holdout_rmse": 1.004931,
+      "mean_test_rmse": 0.912568
+    },
+    {
+      "seed": 23,
+      "task": "unstructured",
+      "basis_count": 13,
+      "selected_terms": [
+        "x\u00b3"
+      ],
+      "test_rmse": 0.909177,
+      "validation_rmse": 0.793723,
+      "blocked_holdout_rmse": 1.004931,
+      "mean_test_rmse": 0.912568
+    }
+  ],
+  "summary": [
+    {
+      "task": "interaction",
+      "basis_count": 8,
+      "mean_test_rmse": 0.087939,
+      "mean_blocked_holdout_rmse": 0.143596,
+      "seeds": 5
+    },
+    {
+      "task": "interaction",
+      "basis_count": 13,
+      "mean_test_rmse": 0.001678,
+      "mean_blocked_holdout_rmse": 0.010262,
+      "seeds": 5
+    },
+    {
+      "task": "polynomial",
+      "basis_count": 8,
+      "mean_test_rmse": 0.001602,
+      "mean_blocked_holdout_rmse": 0.010225,
+      "seeds": 5
+    },
+    {
+      "task": "polynomial",
+      "basis_count": 13,
+      "mean_test_rmse": 0.001602,
+      "mean_blocked_holdout_rmse": 0.010225,
+      "seeds": 5
+    },
+    {
+      "task": "unstructured",
+      "basis_count": 8,
+      "mean_test_rmse": 0.956902,
+      "mean_blocked_holdout_rmse": 0.897708,
+      "seeds": 5
+    },
+    {
+      "task": "unstructured",
+      "basis_count": 13,
+      "mean_test_rmse": 0.963586,
+      "mean_blocked_holdout_rmse": 0.902125,
+      "seeds": 5
+    }
+  ],
+  "method": "Held-out independent numerical coordinates sampled separately from equation fitting and selection.",
+  "limitations": [
+    "Interaction dataset deliberately matches an enlarged declared grammar.",
+    "Unstructured test targets are sampled independently; neither equation family can predict them.",
+    "Selected coefficients are not proof of a physical law or broad language capability."
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "schema": 1,
+  "comparison": "Three-seed, same corpus/optimizer/steps, approximately matching weight payload, not equal training FLOPs; no broad language claims.",
+  "runs": [
+    {
+      "seed": 7,
+      "variant": "factorized_rank16",
+      "kind": "factorized",
+      "hidden": 48,
+      "rank": 16,
+      "bytes": 21888,
+      "validation_loss": 0.8881025314331055,
+      "train_loss": 0.9564840197563171,
+      "training_seconds": 10.788,
+      "parity_max_error": 5.7220458984375e-06
+    },
+    {
+      "seed": 7,
+      "variant": "dense_width38",
+      "kind": "dense",
+      "hidden": 38,
+      "rank": null,
+      "bytes": 21672,
+      "validation_loss": 0.5563983917236328,
+      "train_loss": 0.6047869920730591,
+      "training_seconds": 7.777,
+      "parity_max_error": 2.86102294921875e-06
+    },
+    {
+      "seed": 11,
+      "variant": "factorized_rank16",
+      "kind": "factorized",
+      "hidden": 48,
+      "rank": 16,
+      "bytes": 21888,
+      "validation_loss": 1.1614506244659424,
+      "train_loss": 1.1238337755203247,
+      "training_seconds": 10.855,
+      "parity_max_error": 6.67572021484375e-06
+    },
+    {
+      "seed": 11,
+      "variant": "dense_width38",
+      "kind": "dense",
+      "hidden": 38,
+      "rank": null,
+      "bytes": 21672,
+      "validation_loss": 0.6472561359405518,
+      "train_loss": 0.6447879076004028,
+      "training_seconds": 7.895,
+      "parity_max_error": 3.814697265625e-06
+    },
+    {
+      "seed": 19,
+      "variant": "factorized_rank16",
+      "kind": "factorized",
+      "hidden": 48,
+      "rank": 16,
+      "bytes": 21888,
+      "validation_loss": 1.0059746503829956,
+      "train_loss": 0.9907308220863342,
+      "training_seconds": 10.506,
+      "parity_max_error": 2.86102294921875e-06
+    },
+    {
+      "seed": 19,
+      "variant": "dense_width38",
+      "kind": "dense",
+      "hidden": 38,
+      "rank": null,
+      "bytes": 21672,
+      "validation_loss": 0.5514959692955017,
+      "train_loss": 0.5973231792449951,
+      "training_seconds": 7.939,
+      "parity_max_error": 1.9073486328125e-06
+    }
+  ],
+  "summary": {
+    "factorized_rank16": {
+      "mean_validation_loss": 1.0185092687606812,
+      "sd_validation_loss": 0.13710445829577453,
+      "mean_payload_bytes": 21888
+    },
+    "dense_width38": {
+      "mean_validation_loss": 0.5850501656532288,
+      "sd_validation_loss": 0.053927687609950835,
+      "mean_payload_bytes": 21672
+    }
+  }
+}

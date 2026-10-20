@@ -1,0 +1,36 @@
+{
+  "schema": "atlas-qa-fixture-v1",
+  "limits": "Synthetic lexical QA coverage tests. Questions were written to share the terms of the recorded sentence; no semantic paraphrase or real-world factual understanding is established.",
+  "positive": [
+    {"question": "Where was the Cloudglass Observatory reference prism stored?", "expected": "KAPPA-47"},
+    {"question": "Who was the night supervisor?", "expected": "Talia Soren"},
+    {"question": "What was the project's verification phrase?", "expected": "sapphire lantern migration"},
+    {"question": "What instrument used a measured phase curve?", "expected": "Spectra-9"},
+    {"question": "What was the calibrated sensor channel called?", "expected": "delta-lumen"},
+    {"question": "What did the workshop store behind blue lockers?", "expected": "cedar planks"},
+    {"question": "What calibration interval does the Lazuli spectrometer record?", "expected": "28 minutes"},
+    {"question": "Which batch cataloged the Orion sample?", "expected": "KNOT-19"},
+    {"question": "What channel does the Juniper probe communicate using?", "expected": "CITRUS-8"},
+    {"question": "Who was the Atlas field observer?", "expected": "Mira Velas"},
+    {"question": "Where is the simulated reactor housed?", "expected": "FERN-62"},
+    {"question": "Where was the reference sensor manufactured?", "expected": "North Quay"},
+    {"question": "When did the safety inspection occur?", "expected": "fourth survey day"},
+    {"question": "Who was the instrument log project lead?", "expected": "Dev Saren"},
+    {"question": "What is the nominal reading of the Polaris sensor?", "expected": "0.72"},
+    {"question": "Where does the Sapphire array store its measurements?", "expected": "RIVER-13"},
+    {"question": "What kind of instrument did the baseline experiment employ?", "expected": "quartz-tipped"},
+    {"question": "How long is the recovery procedure waiting period?", "expected": "15-minute"}
+  ],
+  "negative": [
+    {"question": "What color was the reference prism?"},
+    {"question": "What is the Lazuli spectrometer's operating voltage?"},
+    {"question": "Who funded the Orion sample?"},
+    {"question": "What is the Juniper probe's weight?"},
+    {"question": "What year was the Atlas field observer born?"},
+    {"question": "Where is the simulated reactor manufacturer based?"},
+    {"question": "What is the medical outcome of the baseline experiment?"},
+    {"question": "What is the Polaris sensor's serial number?"},
+    {"question": "What is the Sapphire array price?"},
+    {"question": "What is the recovery procedure's regulatory license?"}
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "schema": 1,
+  "checkpoint_id": "9c093552708e721a",
+  "kind": "simple-rnn",
+  "vocab": [
+    "\n",
+    " ",
+    ".",
+    ":",
+    "?",
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "H",
+    "I",
+    "L",
+    "M",
+    "N",
+    "O",
+    "P",
+    "Q",
+    "R",
+    "S",
+    "T",
+    "U",
+    "W",
+    "a",
+    "b",
+    "c",
+    "d",
+    "e",
+    "f",
+    "g",
+    "h",
+    "i",
+    "k",
+    "l",
+    "m",
+    "n",
+    "o",
+    "p",
+    "q",
+    "r",
+    "s",
+    "t",
+    "u",
+    "v",
+    "w",
+    "x",
+    "y",
+    "z"
+  ],
+  "hidden": 48,
+  "embedding_dim": 24,
+  "operators": {
+    "input": {
+      "kind": "factorized",
+      "shape": [
+        48,
+        24
+      ],
+      "array_keys": [
+        "a",
+        "b"
+      ]
+    },
+    "recurrent": {
+      "kind": "factorized",
+      "shape": [
+        48,
+        48
+      ],
+      "array_keys": [
+        "a",
+        "b"
+      ]
+    },
+    "head": {
+      "kind": "factorized",
+      "shape": [
+        48,
+        48
+      ],
+      "array_keys": [
+        "a",
+        "b"
+      ]
+    }
+  },
+  "training": {
+    "corpus_sha256": "a78a55d82078ab82b2e7e92242c85f45d3d4e98f3d5f184d8cd5c73dce1f41a5",
+    "train_chars": 99062,
+    "validation_chars": 13509,
+    "steps": 700,
+    "seed": 7,
+    "rank": 16,
+    "batch_size": 20,
+    "sequence_length": 48,
+    "train_loss": 0.9564840197563171,
+    "validation_loss": 0.8881025314331055,
+    "seconds": 11.265,
+    "corpus_note": "Small authored demonstration corpus; quality claims limited to this domain.",
+    "numpy_torch_max_error": 5.7220458984375e-06
+  }
+}

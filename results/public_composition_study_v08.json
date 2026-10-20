@@ -1,0 +1,81 @@
+{
+  "schema": "operator-atlas-fixture-study-v1",
+  "experiment_type": "synthetic_public_fixture_not_independent_language_benchmark",
+  "fixture_hashes": [
+    {
+      "name": "research_notebook.md",
+      "source_id": 1,
+      "sha256": "8c4faecae3d9ee004e2a91ee15ba6571b2efce2e432e4a45ebe2bd9e8e281a0c"
+    },
+    {
+      "name": "unrelated_notes.md",
+      "source_id": 2,
+      "sha256": "537c093c3c6b4060b3db4ecb9279336222ca1964856a26430f84726ca54cd4c4"
+    },
+    {
+      "name": "calibration.csv",
+      "source_id": 3,
+      "sha256": "458cae70322a282898baef6fe4d76ecb68dc3922364b0d77e74a47e1c9978277"
+    },
+    {
+      "name": "secondary_calibration.csv",
+      "source_id": 4,
+      "sha256": "d87c81235c6f0e71084f33042ee7ff17ff6e64541b991cf8b034fe146d9b460a"
+    },
+    {
+      "name": "random_control.csv",
+      "source_id": 5,
+      "sha256": "7320ada96f69b941cc20a5a1c59c130d3370462bb9550d6a30547209d09eb714"
+    }
+  ],
+  "question": "Where was the Cloudglass Observatory reference prism stored?",
+  "before": {
+    "found": false,
+    "method": "lexical overlap only; passages are not proof and may be unrelated",
+    "response_route": "abstain",
+    "supported": false
+  },
+  "after": {
+    "found": true,
+    "source_ids": [
+      1
+    ],
+    "matched_source": 1,
+    "response_route": "source_excerpt",
+    "supported": true
+  },
+  "composition": {
+    "first_equation": 1,
+    "second_equation": 2,
+    "supported": true,
+    "response_route": "composed_equations",
+    "intermediate_value": 2.6931457358996123,
+    "final_value": 4.846674831062567,
+    "outside_range_refused": true,
+    "disclosure": "Numerically evaluated sequence of source-linked empirical fits. Input/output units and combined uncertainty are not validated; individual RMSE values cannot simply be added."
+  },
+  "equation": {
+    "equation_id": 1,
+    "source_id": 3,
+    "formula": "(1.4)·1 + (-0.5002)·x² + (2)·sin(2x)",
+    "terms": [
+      "1",
+      "x²",
+      "sin(2x)"
+    ],
+    "validation_rmse": 0.002385442580803191,
+    "mean_baseline_rmse": 1.5974248441262537,
+    "within_range_estimate": 2.6931457358996123,
+    "independent_synthetic_truth": 2.6929650200466684,
+    "absolute_error": 0.00018071585294388015,
+    "response_route": "qualified_equation",
+    "outside_range_refused": true,
+    "random_control_refused": true
+  },
+  "evidence": {
+    "source_count": 5,
+    "chunk_count": 9,
+    "equation_count": 2
+  },
+  "limits": "Synthetic data; equation search uses declared 13-term grammar, and chained equations do not establish unit compatibility or cumulative error. No neural weights changed."
+}

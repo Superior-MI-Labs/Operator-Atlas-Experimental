@@ -1,0 +1,31 @@
+{
+  "schema": "operator-atlas-evidence-study-v1",
+  "data_type": "hand-authored fictional fixtures",
+  "positive_total": 18,
+  "positive_correct": 18,
+  "positive_missed": [],
+  "negative_total": 10,
+  "negative_abstained": 10,
+  "negative_errors": [],
+  "naive_chunk_search_false_positive_count": 10,
+  "before_all_abstained": true,
+  "sources": [
+    {
+      "source_id": 1,
+      "sha256": "56b74332212b54f2a059dcdfe97866116174980da77aa317c60f6eb7df23897e",
+      "name": "research_notebook.md"
+    },
+    {
+      "source_id": 2,
+      "sha256": "43bdc3e8aa637ddcad618c97a5837d762dfcbdeb0dd50945de10e6fefa865631",
+      "name": "unrelated_notes.md"
+    },
+    {
+      "source_id": 3,
+      "sha256": "2769d9d52deefe3b984a71cf498943472a14465ee617c33cbe7e97c81c76ea60",
+      "name": "evidence_qa.md"
+    }
+  ],
+  "conflict_reported": true,
+  "limitations": "Synthetic lexical QA coverage tests. Questions were written to share the terms of the recorded sentence; no semantic paraphrase or real-world factual understanding is established. Quoting a source does not prove truth, and the test does not cover paraphrase, contradiction detection, or independent comprehension."
+}

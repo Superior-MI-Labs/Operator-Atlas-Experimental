@@ -1,0 +1,101 @@
+{
+  "run_id": "f31d11e4014d49d8",
+  "schema": 1,
+  "experiment": "two_layer_matched_budget",
+  "steps": 400,
+  "seeds": [
+    3,
+    7,
+    11
+  ],
+  "comparison": "same training data and optimizer; factorized width48 rank16 vs dense width38",
+  "summary": {
+    "dense": {
+      "mean_test_loss": 0.30033329746328524,
+      "sd_test_loss": 0.05040314562344673,
+      "stored_bytes": 33224,
+      "seeds": 3
+    },
+    "factorized": {
+      "mean_test_loss": 0.36646502450427,
+      "sd_test_loss": 0.04517350224415588,
+      "stored_bytes": 34176,
+      "seeds": 3
+    }
+  },
+  "runs": [
+    {
+      "seed": 3,
+      "kind": "dense",
+      "layers": 2,
+      "hidden": 38,
+      "checkpoint": "c4ab20379cfeec67",
+      "stored_bytes": 33224,
+      "validation_cross_entropy": 0.4150930345058441,
+      "reporting_test_cross_entropy": 0.2650741378284679,
+      "training_seconds": 5.46,
+      "parity_error": 2.0265579223632812e-06
+    },
+    {
+      "seed": 3,
+      "kind": "factorized",
+      "layers": 2,
+      "hidden": 48,
+      "checkpoint": "97534956308f1d9d",
+      "stored_bytes": 34176,
+      "validation_cross_entropy": 0.6084968447685242,
+      "reporting_test_cross_entropy": 0.4140955620175083,
+      "training_seconds": 7.752,
+      "parity_error": 2.86102294921875e-06
+    },
+    {
+      "seed": 7,
+      "kind": "dense",
+      "layers": 2,
+      "hidden": 38,
+      "checkpoint": "807623de09b3ba9e",
+      "stored_bytes": 33224,
+      "validation_cross_entropy": 0.5231501460075378,
+      "reporting_test_cross_entropy": 0.35806363581620326,
+      "training_seconds": 5.434,
+      "parity_error": 2.86102294921875e-06
+    },
+    {
+      "seed": 7,
+      "kind": "factorized",
+      "layers": 2,
+      "hidden": 48,
+      "checkpoint": "b1d99012be6f7709",
+      "stored_bytes": 34176,
+      "validation_cross_entropy": 0.571731448173523,
+      "reporting_test_cross_entropy": 0.36106562464251307,
+      "training_seconds": 7.561,
+      "parity_error": 4.76837158203125e-06
+    },
+    {
+      "seed": 11,
+      "kind": "dense",
+      "layers": 2,
+      "hidden": 38,
+      "checkpoint": "ccab8d664012b372",
+      "stored_bytes": 33224,
+      "validation_cross_entropy": 0.4618030786514282,
+      "reporting_test_cross_entropy": 0.2778621187451845,
+      "training_seconds": 6.399,
+      "parity_error": 2.1457672119140625e-06
+    },
+    {
+      "seed": 11,
+      "kind": "factorized",
+      "layers": 2,
+      "hidden": 48,
+      "checkpoint": "abb0c14edbd0c326",
+      "stored_bytes": 34176,
+      "validation_cross_entropy": 0.5676727294921875,
+      "reporting_test_cross_entropy": 0.3242338868527886,
+      "training_seconds": 7.922,
+      "parity_error": 1.9073486328125e-06
+    }
+  ],
+  "limitations": "Authored repeated corpus, character prediction, not independent language understanding; no proof of scaling or quality benefit."
+}

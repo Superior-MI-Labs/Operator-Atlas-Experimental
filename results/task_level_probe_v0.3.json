@@ -1,0 +1,257 @@
+{
+  "schema": 1,
+  "kind": "task_loss_operator_probe",
+  "source_checkpoint": "313474672bee260e",
+  "corpus_sha256": "a78a55d82078ab82b2e7e92242c85f45d3d4e98f3d5f184d8cd5c73dce1f41a5",
+  "selection_rule": "Greedy minimum payload with total validation cross-entropy <= original + tolerance; no test selection",
+  "allowed_increase": 0.05,
+  "partitions": {
+    "train_characters": 99062,
+    "validation_characters": 400,
+    "test_characters": 400,
+    "note": "Templated authored corpus repeats patterns; validation/test separation does not guarantee semantic independence"
+  },
+  "base_validation": {
+    "cross_entropy": 0.5647114231524005,
+    "characters": 399,
+    "unknown_fraction": 0.0
+  },
+  "base_test": {
+    "cross_entropy": 0.5870210333803149,
+    "characters": 399,
+    "unknown_fraction": 0.0
+  },
+  "selected_validation": {
+    "cross_entropy": 0.5668423321449201,
+    "characters": 399,
+    "unknown_fraction": 0.0
+  },
+  "selected_test": {
+    "cross_entropy": 0.5860993698766837,
+    "characters": 399,
+    "unknown_fraction": 0.0
+  },
+  "shuffled_negative_control": {
+    "base": {
+      "cross_entropy": 8.1091003215326,
+      "characters": 399,
+      "unknown_fraction": 0.0
+    },
+    "selected": {
+      "cross_entropy": 8.09965684759437,
+      "characters": 399,
+      "unknown_fraction": 0.0
+    },
+    "note": "Shuffled held-out characters are a distribution-shift stress case, not meaningful natural language."
+  },
+  "original_payload_bytes": 18792,
+  "selected_payload_bytes": 8409,
+  "relative_payload_saving": 0.552522349936143,
+  "operators": [
+    {
+      "operator": "input",
+      "selected": {
+        "kind": "int8",
+        "rank": null,
+        "bytes": 796,
+        "validation_loss": 0.5643578205679719,
+        "qualified": true
+      },
+      "alternatives": [
+        {
+          "kind": "dense",
+          "rank": null,
+          "bytes": 3168,
+          "validation_loss": 0.5647114722169769,
+          "qualified": true
+        },
+        {
+          "kind": "int8",
+          "rank": null,
+          "bytes": 796,
+          "validation_loss": 0.5643578205679719,
+          "qualified": true
+        },
+        {
+          "kind": "factorized",
+          "rank": 2,
+          "bytes": 456,
+          "validation_loss": 6.06189918118677,
+          "qualified": false
+        },
+        {
+          "kind": "factorized",
+          "rank": 4,
+          "bytes": 912,
+          "validation_loss": 4.5207931106225,
+          "qualified": false
+        },
+        {
+          "kind": "factorized",
+          "rank": 8,
+          "bytes": 1824,
+          "validation_loss": 2.9946512780660592,
+          "qualified": false
+        },
+        {
+          "kind": "factorized",
+          "rank": 12,
+          "bytes": 2736,
+          "validation_loss": 1.7045627134907895,
+          "qualified": false
+        },
+        {
+          "kind": "factorized",
+          "rank": 16,
+          "bytes": 3648,
+          "validation_loss": 0.9456491641545931,
+          "qualified": false
+        }
+      ]
+    },
+    {
+      "operator": "recurrent",
+      "selected": {
+        "kind": "int8",
+        "rank": null,
+        "bytes": 1093,
+        "validation_loss": 0.5663736816479432,
+        "qualified": true
+      },
+      "alternatives": [
+        {
+          "kind": "dense",
+          "rank": null,
+          "bytes": 4356,
+          "validation_loss": 0.5643577946581493,
+          "qualified": true
+        },
+        {
+          "kind": "int8",
+          "rank": null,
+          "bytes": 1093,
+          "validation_loss": 0.5663736816479432,
+          "qualified": true
+        },
+        {
+          "kind": "factorized",
+          "rank": 2,
+          "bytes": 528,
+          "validation_loss": 3.2654386400067725,
+          "qualified": false
+        },
+        {
+          "kind": "factorized",
+          "rank": 4,
+          "bytes": 1056,
+          "validation_loss": 3.2218194146837322,
+          "qualified": false
+        },
+        {
+          "kind": "factorized",
+          "rank": 8,
+          "bytes": 2112,
+          "validation_loss": 2.6592285220524605,
+          "qualified": false
+        },
+        {
+          "kind": "factorized",
+          "rank": 12,
+          "bytes": 3168,
+          "validation_loss": 2.2545548433899882,
+          "qualified": false
+        },
+        {
+          "kind": "factorized",
+          "rank": 16,
+          "bytes": 4224,
+          "validation_loss": 1.8664536556557865,
+          "qualified": false
+        },
+        {
+          "kind": "factorized",
+          "rank": 24,
+          "bytes": 6336,
+          "validation_loss": 0.868276842025655,
+          "qualified": false
+        }
+      ]
+    },
+    {
+      "operator": "head",
+      "selected": {
+        "kind": "int8",
+        "rank": null,
+        "bytes": 1588,
+        "validation_loss": 0.5668423321449201,
+        "qualified": true
+      },
+      "alternatives": [
+        {
+          "kind": "dense",
+          "rank": null,
+          "bytes": 6336,
+          "validation_loss": 0.5663736819362062,
+          "qualified": true
+        },
+        {
+          "kind": "int8",
+          "rank": null,
+          "bytes": 1588,
+          "validation_loss": 0.5668423321449201,
+          "qualified": true
+        },
+        {
+          "kind": "factorized",
+          "rank": 2,
+          "bytes": 648,
+          "validation_loss": 4.11115176929328,
+          "qualified": false
+        },
+        {
+          "kind": "factorized",
+          "rank": 4,
+          "bytes": 1296,
+          "validation_loss": 3.2936538560671416,
+          "qualified": false
+        },
+        {
+          "kind": "factorized",
+          "rank": 8,
+          "bytes": 2592,
+          "validation_loss": 2.1361722356327366,
+          "qualified": false
+        },
+        {
+          "kind": "factorized",
+          "rank": 12,
+          "bytes": 3888,
+          "validation_loss": 1.3601865854790598,
+          "qualified": false
+        },
+        {
+          "kind": "factorized",
+          "rank": 16,
+          "bytes": 5184,
+          "validation_loss": 1.0204539219979218,
+          "qualified": false
+        },
+        {
+          "kind": "factorized",
+          "rank": 24,
+          "bytes": 7776,
+          "validation_loss": 0.6194750148536996,
+          "qualified": false
+        }
+      ]
+    }
+  ],
+  "timing": {
+    "method": "median wall-clock latency per character, 6 alternating-order passes, CPU, includes Python interpreter overhead",
+    "baseline_ms_per_character": 0.00743840234375,
+    "selected_ms_per_character": 0.0145107890625,
+    "platform": "Linux-6.18.55-x86_64-with-glibc2.41"
+  },
+  "seconds": 0.229,
+  "limitation": "Post-training candidate search on a tiny RNN; not open-ended equation discovery, large-model compression or a GPU performance result."
+}

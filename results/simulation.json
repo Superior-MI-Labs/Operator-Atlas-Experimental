@@ -1,0 +1,836 @@
+{
+  "selector": [
+    {
+      "case": "structured",
+      "result": {
+        "selected": "factorized rank 8",
+        "selected_bytes": 6144,
+        "max_relative_error": 0.025,
+        "alternatives": [
+          {
+            "kind": "dense",
+            "bytes": 36864,
+            "validation_error": 0.0,
+            "shifted_error": 0.0,
+            "qualified": true
+          },
+          {
+            "kind": "int8",
+            "bytes": 9220,
+            "validation_error": 0.014921559020876884,
+            "shifted_error": 0.015356829389929771,
+            "qualified": true
+          },
+          {
+            "kind": "factorized rank 2",
+            "bytes": 1536,
+            "validation_error": 0.7631943821907043,
+            "shifted_error": 0.791251003742218,
+            "qualified": false
+          },
+          {
+            "kind": "factorized_sparse rank 2",
+            "bytes": 2640,
+            "validation_error": 0.7206041216850281,
+            "shifted_error": 0.744707465171814,
+            "qualified": false
+          },
+          {
+            "kind": "factorized rank 4",
+            "bytes": 3072,
+            "validation_error": 0.5743380188941956,
+            "shifted_error": 0.5961238145828247,
+            "qualified": false
+          },
+          {
+            "kind": "factorized_sparse rank 4",
+            "bytes": 4176,
+            "validation_error": 0.5402040481567383,
+            "shifted_error": 0.5568358898162842,
+            "qualified": false
+          },
+          {
+            "kind": "factorized rank 8",
+            "bytes": 6144,
+            "validation_error": 2.5782165380405786e-07,
+            "shifted_error": 2.6850631229535793e-07,
+            "qualified": true
+          },
+          {
+            "kind": "factorized_sparse rank 8",
+            "bytes": 7248,
+            "validation_error": 2.640684897414758e-07,
+            "shifted_error": 2.6605221137288027e-07,
+            "qualified": true
+          },
+          {
+            "kind": "factorized rank 16",
+            "bytes": 12288,
+            "validation_error": 2.5716730078784167e-07,
+            "shifted_error": 2.6794256768880587e-07,
+            "qualified": true
+          },
+          {
+            "kind": "factorized_sparse rank 16",
+            "bytes": 13392,
+            "validation_error": 2.6709909661803977e-07,
+            "shifted_error": 2.650098451795202e-07,
+            "qualified": true
+          },
+          {
+            "kind": "factorized rank 96",
+            "bytes": 73728,
+            "validation_error": 2.5637046974225086e-07,
+            "shifted_error": 2.673615142612107e-07,
+            "qualified": true
+          }
+        ]
+      }
+    },
+    {
+      "case": "random",
+      "result": {
+        "selected": "int8",
+        "selected_bytes": 9220,
+        "max_relative_error": 0.025,
+        "alternatives": [
+          {
+            "kind": "dense",
+            "bytes": 36864,
+            "validation_error": 0.0,
+            "shifted_error": 0.0,
+            "qualified": true
+          },
+          {
+            "kind": "int8",
+            "bytes": 9220,
+            "validation_error": 0.008565405383706093,
+            "shifted_error": 0.008639542385935783,
+            "qualified": true
+          },
+          {
+            "kind": "factorized rank 2",
+            "bytes": 1536,
+            "validation_error": 0.9584759473800659,
+            "shifted_error": 0.9606846570968628,
+            "qualified": false
+          },
+          {
+            "kind": "factorized_sparse rank 2",
+            "bytes": 2640,
+            "validation_error": 0.9149869680404663,
+            "shifted_error": 0.9173803925514221,
+            "qualified": false
+          },
+          {
+            "kind": "factorized rank 4",
+            "bytes": 3072,
+            "validation_error": 0.9184126853942871,
+            "shifted_error": 0.9230594635009766,
+            "qualified": false
+          },
+          {
+            "kind": "factorized_sparse rank 4",
+            "bytes": 4176,
+            "validation_error": 0.8724238276481628,
+            "shifted_error": 0.875214159488678,
+            "qualified": false
+          },
+          {
+            "kind": "factorized rank 8",
+            "bytes": 6144,
+            "validation_error": 0.8534324765205383,
+            "shifted_error": 0.8558070659637451,
+            "qualified": false
+          },
+          {
+            "kind": "factorized_sparse rank 8",
+            "bytes": 7248,
+            "validation_error": 0.8056290745735168,
+            "shifted_error": 0.8047900795936584,
+            "qualified": false
+          },
+          {
+            "kind": "factorized rank 16",
+            "bytes": 12288,
+            "validation_error": 0.7249596118927002,
+            "shifted_error": 0.7330783009529114,
+            "qualified": false
+          },
+          {
+            "kind": "factorized_sparse rank 16",
+            "bytes": 13392,
+            "validation_error": 0.672781229019165,
+            "shifted_error": 0.6779493689537048,
+            "qualified": false
+          },
+          {
+            "kind": "factorized rank 96",
+            "bytes": 73728,
+            "validation_error": 3.399611898657895e-07,
+            "shifted_error": 3.37888451440449e-07,
+            "qualified": true
+          }
+        ]
+      }
+    }
+  ],
+  "schema": 1,
+  "experiment": "synthetic representation + bounded symbolic grammar + host-local microbenchmark",
+  "seed": 41,
+  "representation": [
+    {
+      "case": "structured",
+      "operator": "dense",
+      "rank": null,
+      "sparse_entries": 0,
+      "relative_output_error": 0.0,
+      "payload_bytes": 36864
+    },
+    {
+      "case": "structured",
+      "operator": "int8",
+      "rank": null,
+      "sparse_entries": 0,
+      "relative_output_error": 0.014610297046601772,
+      "payload_bytes": 9220
+    },
+    {
+      "case": "structured",
+      "operator": "factorized",
+      "rank": 4,
+      "sparse_entries": 0,
+      "relative_output_error": 0.5857436060905457,
+      "payload_bytes": 3072
+    },
+    {
+      "case": "structured",
+      "operator": "factorized",
+      "rank": 8,
+      "sparse_entries": 0,
+      "relative_output_error": 2.665798319867463e-07,
+      "payload_bytes": 6144
+    },
+    {
+      "case": "structured",
+      "operator": "factorized_sparse",
+      "rank": 8,
+      "sparse_entries": 24,
+      "relative_output_error": 2.684497530935914e-07,
+      "payload_bytes": 6432
+    },
+    {
+      "case": "structured",
+      "operator": "factorized",
+      "rank": 16,
+      "sparse_entries": 0,
+      "relative_output_error": 2.656421429492184e-07,
+      "payload_bytes": 12288
+    },
+    {
+      "case": "structured_exceptions",
+      "operator": "dense",
+      "rank": null,
+      "sparse_entries": 0,
+      "relative_output_error": 0.0,
+      "payload_bytes": 36864
+    },
+    {
+      "case": "structured_exceptions",
+      "operator": "int8",
+      "rank": null,
+      "sparse_entries": 0,
+      "relative_output_error": 0.01447727344930172,
+      "payload_bytes": 9220
+    },
+    {
+      "case": "structured_exceptions",
+      "operator": "factorized",
+      "rank": 4,
+      "sparse_entries": 0,
+      "relative_output_error": 0.5730559825897217,
+      "payload_bytes": 3072
+    },
+    {
+      "case": "structured_exceptions",
+      "operator": "factorized",
+      "rank": 8,
+      "sparse_entries": 0,
+      "relative_output_error": 0.04519002512097359,
+      "payload_bytes": 6144
+    },
+    {
+      "case": "structured_exceptions",
+      "operator": "factorized_sparse",
+      "rank": 8,
+      "sparse_entries": 24,
+      "relative_output_error": 2.699659660265752e-07,
+      "payload_bytes": 6432
+    },
+    {
+      "case": "structured_exceptions",
+      "operator": "factorized",
+      "rank": 16,
+      "sparse_entries": 0,
+      "relative_output_error": 0.019808245822787285,
+      "payload_bytes": 12288
+    },
+    {
+      "case": "random",
+      "operator": "dense",
+      "rank": null,
+      "sparse_entries": 0,
+      "relative_output_error": 0.0,
+      "payload_bytes": 36864
+    },
+    {
+      "case": "random",
+      "operator": "int8",
+      "rank": null,
+      "sparse_entries": 0,
+      "relative_output_error": 0.008589887991547585,
+      "payload_bytes": 9220
+    },
+    {
+      "case": "random",
+      "operator": "factorized",
+      "rank": 4,
+      "sparse_entries": 0,
+      "relative_output_error": 0.9238419532775879,
+      "payload_bytes": 3072
+    },
+    {
+      "case": "random",
+      "operator": "factorized",
+      "rank": 8,
+      "sparse_entries": 0,
+      "relative_output_error": 0.8555249571800232,
+      "payload_bytes": 6144
+    },
+    {
+      "case": "random",
+      "operator": "factorized_sparse",
+      "rank": 8,
+      "sparse_entries": 24,
+      "relative_output_error": 0.8384334444999695,
+      "payload_bytes": 6432
+    },
+    {
+      "case": "random",
+      "operator": "factorized",
+      "rank": 16,
+      "sparse_entries": 0,
+      "relative_output_error": 0.722197949886322,
+      "payload_bytes": 12288
+    }
+  ],
+  "equation": {
+    "terms": [
+      "1",
+      "x²",
+      "sin(2x)"
+    ],
+    "coefficients": [
+      1.19532618,
+      -0.70444904,
+      1.49407983
+    ],
+    "train_rmse": 0.03300304462400104,
+    "validation_rmse": 0.03360676864364093,
+    "blocked_holdout_rmse": 0.03900589094561522,
+    "blocked_holdout_mean_rmse": 1.5979416233892596,
+    "blocked_holdout_note": "Highest-coordinate 15% withheld from refitting; stress diagnostic only, not proof of extrapolation.",
+    "mean_baseline_rmse": 1.3868662079110745,
+    "beats_mean_baseline": true,
+    "stored_scalars": 3,
+    "basis_functions_considered": 13,
+    "observation_count": 90,
+    "equation": "(1.195)·1 + (-0.7044)·x² + (1.494)·sin(2x)",
+    "limitation": "Search over declared 13-term compositional grammar; validation and blocked-coordinate stress check do not prove a physical law."
+  },
+  "equation_example": [
+    -0.867685804891152,
+    1.19532618,
+    1.8494400848911519
+  ],
+  "equation_family_study": {
+    "schema": "atlas-equation-family-study-v1",
+    "seeds": [
+      3,
+      7,
+      11,
+      17,
+      23
+    ],
+    "rows": [
+      {
+        "seed": 3,
+        "task": "interaction",
+        "basis_count": 8,
+        "selected_terms": [
+          "1",
+          "cos(x)",
+          "cos(2x)"
+        ],
+        "test_rmse": 0.09234,
+        "validation_rmse": 0.072734,
+        "blocked_holdout_rmse": 0.101948,
+        "mean_test_rmse": 0.927367
+      },
+      {
+        "seed": 3,
+        "task": "interaction",
+        "basis_count": 13,
+        "selected_terms": [
+          "1",
+          "cos(x)",
+          "x·sin(2x)"
+        ],
+        "test_rmse": 0.002472,
+        "validation_rmse": 0.007709,
+        "blocked_holdout_rmse": 0.010479,
+        "mean_test_rmse": 0.927367
+      },
+      {
+        "seed": 3,
+        "task": "polynomial",
+        "basis_count": 8,
+        "selected_terms": [
+          "1",
+          "x",
+          "x²"
+        ],
+        "test_rmse": 0.001979,
+        "validation_rmse": 0.011914,
+        "blocked_holdout_rmse": 0.013638,
+        "mean_test_rmse": 0.932226
+      },
+      {
+        "seed": 3,
+        "task": "polynomial",
+        "basis_count": 13,
+        "selected_terms": [
+          "1",
+          "x",
+          "x²"
+        ],
+        "test_rmse": 0.001979,
+        "validation_rmse": 0.011914,
+        "blocked_holdout_rmse": 0.013638,
+        "mean_test_rmse": 0.932226
+      },
+      {
+        "seed": 3,
+        "task": "unstructured",
+        "basis_count": 8,
+        "selected_terms": [
+          "1"
+        ],
+        "test_rmse": 1.0135,
+        "validation_rmse": 0.741038,
+        "blocked_holdout_rmse": 0.640646,
+        "mean_test_rmse": 1.007256
+      },
+      {
+        "seed": 3,
+        "task": "unstructured",
+        "basis_count": 13,
+        "selected_terms": [
+          "1"
+        ],
+        "test_rmse": 1.0135,
+        "validation_rmse": 0.741038,
+        "blocked_holdout_rmse": 0.640646,
+        "mean_test_rmse": 1.007256
+      },
+      {
+        "seed": 7,
+        "task": "interaction",
+        "basis_count": 8,
+        "selected_terms": [
+          "1",
+          "cos(x)",
+          "cos(2x)"
+        ],
+        "test_rmse": 0.083787,
+        "validation_rmse": 0.092783,
+        "blocked_holdout_rmse": 0.137753,
+        "mean_test_rmse": 1.050348
+      },
+      {
+        "seed": 7,
+        "task": "interaction",
+        "basis_count": 13,
+        "selected_terms": [
+          "1",
+          "cos(x)",
+          "x·sin(2x)"
+        ],
+        "test_rmse": 0.001527,
+        "validation_rmse": 0.009703,
+        "blocked_holdout_rmse": 0.010786,
+        "mean_test_rmse": 1.050348
+      },
+      {
+        "seed": 7,
+        "task": "polynomial",
+        "basis_count": 8,
+        "selected_terms": [
+          "1",
+          "x",
+          "x²"
+        ],
+        "test_rmse": 0.001407,
+        "validation_rmse": 0.008801,
+        "blocked_holdout_rmse": 0.008134,
+        "mean_test_rmse": 1.010234
+      },
+      {
+        "seed": 7,
+        "task": "polynomial",
+        "basis_count": 13,
+        "selected_terms": [
+          "1",
+          "x",
+          "x²"
+        ],
+        "test_rmse": 0.001407,
+        "validation_rmse": 0.008801,
+        "blocked_holdout_rmse": 0.008134,
+        "mean_test_rmse": 1.010234
+      },
+      {
+        "seed": 7,
+        "task": "unstructured",
+        "basis_count": 8,
+        "selected_terms": [
+          "1"
+        ],
+        "test_rmse": 0.809632,
+        "validation_rmse": 1.044782,
+        "blocked_holdout_rmse": 1.080681,
+        "mean_test_rmse": 0.811365
+      },
+      {
+        "seed": 7,
+        "task": "unstructured",
+        "basis_count": 13,
+        "selected_terms": [
+          "x·sin(x)"
+        ],
+        "test_rmse": 0.827167,
+        "validation_rmse": 1.05018,
+        "blocked_holdout_rmse": 1.092285,
+        "mean_test_rmse": 0.811365
+      },
+      {
+        "seed": 11,
+        "task": "interaction",
+        "basis_count": 8,
+        "selected_terms": [
+          "1",
+          "cos(x)",
+          "cos(2x)"
+        ],
+        "test_rmse": 0.08256,
+        "validation_rmse": 0.089989,
+        "blocked_holdout_rmse": 0.145693,
+        "mean_test_rmse": 0.887009
+      },
+      {
+        "seed": 11,
+        "task": "interaction",
+        "basis_count": 13,
+        "selected_terms": [
+          "1",
+          "cos(x)",
+          "x·sin(2x)"
+        ],
+        "test_rmse": 0.001058,
+        "validation_rmse": 0.008548,
+        "blocked_holdout_rmse": 0.011413,
+        "mean_test_rmse": 0.887009
+      },
+      {
+        "seed": 11,
+        "task": "polynomial",
+        "basis_count": 8,
+        "selected_terms": [
+          "1",
+          "x",
+          "x²"
+        ],
+        "test_rmse": 0.000752,
+        "validation_rmse": 0.007791,
+        "blocked_holdout_rmse": 0.010951,
+        "mean_test_rmse": 0.951418
+      },
+      {
+        "seed": 11,
+        "task": "polynomial",
+        "basis_count": 13,
+        "selected_terms": [
+          "1",
+          "x",
+          "x²"
+        ],
+        "test_rmse": 0.000752,
+        "validation_rmse": 0.007791,
+        "blocked_holdout_rmse": 0.010951,
+        "mean_test_rmse": 0.951418
+      },
+      {
+        "seed": 11,
+        "task": "unstructured",
+        "basis_count": 8,
+        "selected_terms": [
+          "sin(2x)"
+        ],
+        "test_rmse": 1.070393,
+        "validation_rmse": 0.934279,
+        "blocked_holdout_rmse": 0.855507,
+        "mean_test_rmse": 1.021296
+      },
+      {
+        "seed": 11,
+        "task": "unstructured",
+        "basis_count": 13,
+        "selected_terms": [
+          "sin(2x)"
+        ],
+        "test_rmse": 1.070393,
+        "validation_rmse": 0.934279,
+        "blocked_holdout_rmse": 0.855507,
+        "mean_test_rmse": 1.021296
+      },
+      {
+        "seed": 17,
+        "task": "interaction",
+        "basis_count": 8,
+        "selected_terms": [
+          "1",
+          "cos(x)",
+          "cos(2x)"
+        ],
+        "test_rmse": 0.096905,
+        "validation_rmse": 0.102052,
+        "blocked_holdout_rmse": 0.156617,
+        "mean_test_rmse": 1.004176
+      },
+      {
+        "seed": 17,
+        "task": "interaction",
+        "basis_count": 13,
+        "selected_terms": [
+          "1",
+          "cos(x)",
+          "x·sin(2x)"
+        ],
+        "test_rmse": 0.001991,
+        "validation_rmse": 0.008987,
+        "blocked_holdout_rmse": 0.008404,
+        "mean_test_rmse": 1.004176
+      },
+      {
+        "seed": 17,
+        "task": "polynomial",
+        "basis_count": 8,
+        "selected_terms": [
+          "1",
+          "x",
+          "x²"
+        ],
+        "test_rmse": 0.001737,
+        "validation_rmse": 0.010397,
+        "blocked_holdout_rmse": 0.011475,
+        "mean_test_rmse": 1.046701
+      },
+      {
+        "seed": 17,
+        "task": "polynomial",
+        "basis_count": 13,
+        "selected_terms": [
+          "1",
+          "x",
+          "x²"
+        ],
+        "test_rmse": 0.001737,
+        "validation_rmse": 0.010397,
+        "blocked_holdout_rmse": 0.011475,
+        "mean_test_rmse": 1.046701
+      },
+      {
+        "seed": 17,
+        "task": "unstructured",
+        "basis_count": 8,
+        "selected_terms": [
+          "x³"
+        ],
+        "test_rmse": 0.98181,
+        "validation_rmse": 0.815271,
+        "blocked_holdout_rmse": 0.906775,
+        "mean_test_rmse": 0.927732
+      },
+      {
+        "seed": 17,
+        "task": "unstructured",
+        "basis_count": 13,
+        "selected_terms": [
+          "x·cos(2x)"
+        ],
+        "test_rmse": 0.997692,
+        "validation_rmse": 0.84552,
+        "blocked_holdout_rmse": 0.917254,
+        "mean_test_rmse": 0.927732
+      },
+      {
+        "seed": 23,
+        "task": "interaction",
+        "basis_count": 8,
+        "selected_terms": [
+          "1",
+          "cos(x)",
+          "cos(2x)"
+        ],
+        "test_rmse": 0.084104,
+        "validation_rmse": 0.07695,
+        "blocked_holdout_rmse": 0.17597,
+        "mean_test_rmse": 1.079381
+      },
+      {
+        "seed": 23,
+        "task": "interaction",
+        "basis_count": 13,
+        "selected_terms": [
+          "1",
+          "cos(x)",
+          "x·sin(2x)"
+        ],
+        "test_rmse": 0.001341,
+        "validation_rmse": 0.010897,
+        "blocked_holdout_rmse": 0.01023,
+        "mean_test_rmse": 1.079381
+      },
+      {
+        "seed": 23,
+        "task": "polynomial",
+        "basis_count": 8,
+        "selected_terms": [
+          "1",
+          "x",
+          "x²"
+        ],
+        "test_rmse": 0.002135,
+        "validation_rmse": 0.010572,
+        "blocked_holdout_rmse": 0.006927,
+        "mean_test_rmse": 1.026211
+      },
+      {
+        "seed": 23,
+        "task": "polynomial",
+        "basis_count": 13,
+        "selected_terms": [
+          "1",
+          "x",
+          "x²"
+        ],
+        "test_rmse": 0.002135,
+        "validation_rmse": 0.010572,
+        "blocked_holdout_rmse": 0.006927,
+        "mean_test_rmse": 1.026211
+      },
+      {
+        "seed": 23,
+        "task": "unstructured",
+        "basis_count": 8,
+        "selected_terms": [
+          "x³"
+        ],
+        "test_rmse": 0.909177,
+        "validation_rmse": 0.793723,
+        "blocked_holdout_rmse": 1.004931,
+        "mean_test_rmse": 0.912568
+      },
+      {
+        "seed": 23,
+        "task": "unstructured",
+        "basis_count": 13,
+        "selected_terms": [
+          "x³"
+        ],
+        "test_rmse": 0.909177,
+        "validation_rmse": 0.793723,
+        "blocked_holdout_rmse": 1.004931,
+        "mean_test_rmse": 0.912568
+      }
+    ],
+    "summary": [
+      {
+        "task": "interaction",
+        "basis_count": 8,
+        "mean_test_rmse": 0.087939,
+        "mean_blocked_holdout_rmse": 0.143596,
+        "seeds": 5
+      },
+      {
+        "task": "interaction",
+        "basis_count": 13,
+        "mean_test_rmse": 0.001678,
+        "mean_blocked_holdout_rmse": 0.010262,
+        "seeds": 5
+      },
+      {
+        "task": "polynomial",
+        "basis_count": 8,
+        "mean_test_rmse": 0.001602,
+        "mean_blocked_holdout_rmse": 0.010225,
+        "seeds": 5
+      },
+      {
+        "task": "polynomial",
+        "basis_count": 13,
+        "mean_test_rmse": 0.001602,
+        "mean_blocked_holdout_rmse": 0.010225,
+        "seeds": 5
+      },
+      {
+        "task": "unstructured",
+        "basis_count": 8,
+        "mean_test_rmse": 0.956902,
+        "mean_blocked_holdout_rmse": 0.897708,
+        "seeds": 5
+      },
+      {
+        "task": "unstructured",
+        "basis_count": 13,
+        "mean_test_rmse": 0.963586,
+        "mean_blocked_holdout_rmse": 0.902125,
+        "seeds": 5
+      }
+    ],
+    "method": "Held-out independent numerical coordinates sampled separately from equation fitting and selection.",
+    "limitations": [
+      "Interaction dataset deliberately matches an enlarged declared grammar.",
+      "Unstructured test targets are sampled independently; neither equation family can predict them.",
+      "Selected coefficients are not proof of a physical law or broad language capability."
+    ]
+  },
+  "timings": {
+    "dense": {
+      "median_ms": 0.01773,
+      "min_ms": 0.01639,
+      "storage_bytes": 2359296
+    },
+    "factor": {
+      "median_ms": 0.01007,
+      "min_ms": 0.00974,
+      "storage_bytes": 294912
+    }
+  },
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.41",
+  "limitations": [
+    "Synthetic source matrices intentionally include or exclude low-rank structure.",
+    "No held-out language-model quality or GPU tokens-per-second results.",
+    "CPU timings are host-local and do not represent production speedups."
+  ]
+}

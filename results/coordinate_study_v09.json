@@ -1,0 +1,106 @@
+{
+  "schema": "atlas-coordinate-study-v1",
+  "seeds": 5,
+  "mean_unseen_rmse_13": 0.20458,
+  "mean_unseen_rmse_16": 0.001012,
+  "large_coordinate_max_abs_error": 0.0,
+  "large_coordinate_center": 12100.0,
+  "per_run": [
+    {
+      "seed": 3,
+      "family_terms": 13,
+      "unseen_rmse": 0.20381386119490127,
+      "selected_terms": [
+        "1",
+        "x",
+        "x\u2074"
+      ]
+    },
+    {
+      "seed": 3,
+      "family_terms": 16,
+      "unseen_rmse": 0.0007047889108920683,
+      "selected_terms": [
+        "1",
+        "log(x)"
+      ]
+    },
+    {
+      "seed": 7,
+      "family_terms": 13,
+      "unseen_rmse": 0.2048593141463796,
+      "selected_terms": [
+        "1",
+        "x",
+        "x\u2074"
+      ]
+    },
+    {
+      "seed": 7,
+      "family_terms": 16,
+      "unseen_rmse": 0.0016902183450703758,
+      "selected_terms": [
+        "1",
+        "log(x)"
+      ]
+    },
+    {
+      "seed": 11,
+      "family_terms": 13,
+      "unseen_rmse": 0.20494966051058527,
+      "selected_terms": [
+        "1",
+        "x",
+        "x\u2074"
+      ]
+    },
+    {
+      "seed": 11,
+      "family_terms": 16,
+      "unseen_rmse": 0.0011184689830907638,
+      "selected_terms": [
+        "1",
+        "log(x)"
+      ]
+    },
+    {
+      "seed": 19,
+      "family_terms": 13,
+      "unseen_rmse": 0.20482107248537046,
+      "selected_terms": [
+        "1",
+        "x",
+        "x\u2074"
+      ]
+    },
+    {
+      "seed": 19,
+      "family_terms": 16,
+      "unseen_rmse": 0.0006218872652746049,
+      "selected_terms": [
+        "1",
+        "log(x)"
+      ]
+    },
+    {
+      "seed": 29,
+      "family_terms": 13,
+      "unseen_rmse": 0.20445503458473815,
+      "selected_terms": [
+        "1",
+        "x",
+        "x\u2074"
+      ]
+    },
+    {
+      "seed": 29,
+      "family_terms": 16,
+      "unseen_rmse": 0.0009235471143411487,
+      "selected_terms": [
+        "1",
+        "log(x)"
+      ]
+    }
+  ],
+  "limits": "Synthetic logarithm drawn from an explicitly available candidate basis. No arbitrary law discovery or OOD extrapolation demonstrated."
+}

@@ -1,7 +1,23 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="270" viewBox="0 0 1200 270" role="img" aria-labelledby="title desc">
-<title id="title">OPERATOR ATLAS</title><desc id="desc">An abstract mathematical operator network. Superior MI Labs research project.</desc>
-<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#06121e"/><stop offset="1" stop-color="#123248"/></linearGradient><linearGradient id="line" x1="0" x2="1"><stop stop-color="#35bda8"/><stop offset="1" stop-color="#82bbec"/></linearGradient><pattern id="grid" width="31" height="31" patternUnits="userSpaceOnUse"><path d="M31 0H0V31" stroke="#9bbfd7" stroke-opacity=".11" fill="none"/></pattern></defs>
-<rect width="1200" height="270" rx="12" fill="url(#bg)"/><rect width="1200" height="270" rx="12" fill="url(#grid)"/>
-<g stroke="url(#line)" fill="none" stroke-width="1.8" opacity=".78"><path d="M827 61L937 91L1042 45L1136 97L1075 186L943 201L827 151L827 61M937 91L943 201M937 91L1075 186M1042 45L1075 186M827 151L1136 97"/><path d="M749 174L827 151M749 90L827 61" stroke-dasharray="5 9" opacity=".5"/></g>
-<g fill="#0b2735" stroke="#68cdbc" stroke-width="2"><circle cx="827" cy="61" r="9"/><circle cx="827" cy="151" r="10"/><circle cx="937" cy="91" r="13"/><circle cx="1042" cy="45" r="9"/><circle cx="1136" cy="97" r="10"/><circle cx="1075" cy="186" r="12"/><circle cx="943" cy="201" r="10"/></g>
-<g font-family="DejaVu Sans, sans-serif" fill="#ebf6ff"><text x="52" y="62" font-size="17" font-weight="700" letter-spacing="4" fill="#5bd2bb">SUPERIOR MI LABS  /  EXPERIMENTAL RESEARCH</text><text x="49" y="146" font-size="66" letter-spacing="1" font-weight="700">OPERATOR ATLAS</text><text x="52" y="189" font-size="21" fill="#b9d1e2">Mathematical representations. Measured evidence. Honest limits.</text><text x="52" y="237" font-size="15" fill="#79b4d0">PUBLIC RESEARCH SOFTWARE  ·  VERSION 1.0.0</text></g></svg>
+  <title id="title">OPERATOR ATLAS</title><desc id="desc">An abstract network of mathematical operators and scientific measurements with the Superior MI Labs research mark.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#06121e"/><stop offset="1" stop-color="#123248"/></linearGradient>
+    <linearGradient id="line" x1="0" x2="1"><stop stop-color="#35bda8"/><stop offset="1" stop-color="#82bbec"/></linearGradient>
+    <pattern id="grid" width="31" height="31" patternUnits="userSpaceOnUse"><path d="M31 0H0V31" stroke="#9bbfd7" stroke-opacity=".11" fill="none"/></pattern>
+  </defs>
+  <rect width="1200" height="270" rx="12" fill="url(#bg)"/><rect width="1200" height="270" rx="12" fill="url(#grid)"/>
+  <g stroke="url(#line)" fill="none" stroke-width="1.8" opacity=".78">
+    <path d="M827 61L937 91L1042 45L1136 97L1075 186L943 201L827 151L827 61M937 91L943 201M937 91L1075 186M1042 45L1075 186M827 151L1136 97"/>
+    <path d="M749 174L827 151M749 90L827 61" stroke-dasharray="5 9" opacity=".5"/>
+  </g>
+  <g fill="#0b2735" stroke="#68cdbc" stroke-width="2">
+    <circle cx="827" cy="61" r="9"/><circle cx="827" cy="151" r="10"/><circle cx="937" cy="91" r="13"/>
+    <circle cx="1042" cy="45" r="9"/><circle cx="1136" cy="97" r="10"/><circle cx="1075" cy="186" r="12"/><circle cx="943" cy="201" r="10"/>
+  </g>
+  <g font-family="DejaVu Sans, sans-serif" fill="#ebf6ff">
+    <text x="52" y="62" font-size="17" font-weight="700" letter-spacing="4" fill="#5bd2bb">SUPERIOR MI LABS  /  EXPERIMENTAL RESEARCH</text>
+    <text x="49" y="146" font-size="66" letter-spacing="1" font-weight="700">OPERATOR ATLAS</text>
+    <text x="52" y="189" font-size="21" fill="#b9d1e2">Mathematical representations. Measured evidence. Honest limits.</text>
+    <text x="52" y="237" font-size="15" fill="#79b4d0">PUBLIC RESEARCH SOFTWARE  ·  VERSION 1.0.0</text>
+  </g>
+</svg>
